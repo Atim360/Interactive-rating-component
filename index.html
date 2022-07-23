@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" async></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main class="component-container">
+    <div class="rating-component component-container__item">
+      <div class="rating-form rating-component__item">
+        <div class="rating-form__icon-star">
+          <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+        </div>
+        <div class="rating-component__item--title">
+          How did we do?
+        </div>
+        <div class="rating-component__item--paragraph">
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </div>
+        <form class="radio-form">
+          <div class="radio-form__radio-group">
+            <div class="radio-form__radio-btn">
+              <input class="radio-form__radio-btn--input" type="radio" name="rating-vote" id="rating-radio-form-opt-1" value="1">
+              <label class="radio-form__radio-btn--label rating-component__item--paragraph" for="rating-radio-form-opt-1">1</label>
+            </div>
+            <div class="radio-form__radio-btn">
+              <input class="radio-form__radio-btn--input" type="radio" name="rating-vote" id="rating-radio-form-opt-2" value="2">
+              <label class="radio-form__radio-btn--label rating-component__item--paragraph" for="rating-radio-form-opt-2">2</label>
+            </div>
+            <div class="radio-form__radio-btn">
+              <input class="radio-form__radio-btn--input" type="radio" name="rating-vote" id="rating-radio-form-opt-3" value="3">
+              <label class="radio-form__radio-btn--label rating-component__item--paragraph" for="rating-radio-form-opt-3">3</label>
+            </div>
+            <div class="radio-form__radio-btn">
+              <input class="radio-form__radio-btn--input" type="radio" name="rating-vote" id="rating-radio-form-opt-4" value="4">
+              <label class="radio-form__radio-btn--label rating-component__item--paragraph" for="rating-radio-form-opt-4">4</label>
+            </div>
+            <div class="radio-form__radio-btn">
+              <input class="radio-form__radio-btn--input" type="radio" name="rating-vote" id="rating-radio-form-opt-5" value="5">
+              <label class="radio-form__radio-btn--label rating-component__item--paragraph" for="rating-radio-form-opt-5">5</label>
+            </div>
+          </div>
+          <button class="radio-form__submit-btn">
+            SUBMIT
+          </button>
+        </form>
+      </div>
+      <div class="rating-submited rating-component__item rating-component__item--hidden">
+        <div class="rating-submited__illustration-thanks">
+          <img src="images/illustration-thank-you.svg" alt="thank you illustration">
+        </div>
+        <div class="rating-submited__selected-rating-vote rating-component__item--paragraph rating-component__item--paragraph-t-orange rating-component__item--paragraph-center">
+          Loading..
+        </div>
+        <div class="rating-component__item--title">
+          Thank you!
+        </div>
+        <div class="rating-component__item--paragraph rating-component__item--paragraph-center">
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a> 
+      Coded by <a href="https://www.frontendmentor.io/profile/Atim360" target="_blank">Théo.</a>
+    </div>
+  </main>
+</body>
+</html>
